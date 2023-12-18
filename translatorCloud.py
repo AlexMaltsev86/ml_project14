@@ -14,7 +14,7 @@ def execute(question):
     st.text('Перевод: ' + result[0]['translation_text'])
 
 # Заголовок
-st.title(body= 'Приложение выполняющее перевод с Английский на Русский')
+st.title(body= 'Приложение выполняющее перевод с Английского на Русский')
 
 # Текст
 question = st.text_input(label='Введите текст',value=' ')
