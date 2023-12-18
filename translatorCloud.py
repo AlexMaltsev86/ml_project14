@@ -1,25 +1,22 @@
 from transformers import pipeline
 import streamlit as st
-
 # Функция подгрузки данных модели
 @st.cache_resource
 def load_model():
-   translator = pipeline("translation_ru_to_en", "Helsinki-NLP/opus-mt-ru-en")
-   return translator
-
+   model_pipeline = pipeline("question-answering", model="deepset/roberta-base-squad2")
+   return model_pipeline
 # Функция запуска модели
-def execute(question):
-   
-    result = model(question)
-    st.text('Перевод: ' + result[0]['translation_text'])
-
+def execute(question1 , text1):
+   result = model(question=question1, context=text1)
+   st.text('Ответ на вопрос: ' + result['answer'])
 # Заголовок
-st.title(body= 'Приложение выполняющее перевод с Английского на Русский')
-
-# Текст
-question = st.text_input(label='Введите текст',value=' ')
+st.title(body= 'Приложение отвечающее на пользовательские вопросы по тексту')
+# Текст для анализа
+text = st.text_area(label='Введите текст',value=' ', height=300)
+# Вопрос
+question = st.text_input(label='Введите вопрос',value=' ')
 # Активность кнопки
-if question == ' ':
+if text == ' ' or question == ' ':
    disabled = True
 else:
    disabled = False
@@ -28,4 +25,4 @@ model = load_model()
 # Кнопка для запуска модели
 executed = st.button(label='Выполнить', disabled=disabled)
 if executed:
-   execute(question)
+   execute(question, text)
