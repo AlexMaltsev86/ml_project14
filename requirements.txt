@@ -1,4 +1,6 @@
 transformers
+streamlit
+tensorflow
 fastapi
 pydantic
 wikipedia
