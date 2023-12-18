@@ -6,6 +6,7 @@ import streamlit as st
 def load_model():
    model_pipeline = pipeline(model="AlexWortega/instruct_rugptlarge")
    return model_pipeline
+
 # Функция запуска модели
 def execute(question):
    
