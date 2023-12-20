@@ -23,7 +23,7 @@
 2. Задать вопрос
 3. Нажать выполнить. В результате будет выведен ответ.
 
-![image](https://github.com/AlexMaltsev86/ml_project14/assets/149813897/026b9561-ffab-4828-9f4b-6bd6476968ce)
+https://github.com/AlexMaltsev86/ml_project14/assets/149813897/026b9561-ffab-4828-9f4b-6bd6476968ce
    
 
 
