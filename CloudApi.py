@@ -19,10 +19,9 @@ model = load_model()
 app = FastAPI()
 
 # Отправка результата запроса
-@app.get("/")
-def answer(params: ApiParams):
-   
+@app.post("/answer/")
+def answer(params: ApiParams):  
    # Ответ на вопрос
    result = model(params.question, params.search_topic)
    return result
-   #return result['answer']
+
