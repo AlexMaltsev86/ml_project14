@@ -8,3 +8,19 @@
 7. Добавлен файл CloudApi.py, реализация Api приложения. Используемая модель https://huggingface.co/deepset/roberta-base-squad2.
 8. Добавлен файл test_CloudApi.py, тесты для приложения CloudApi.py.
 
+# Итоговое приложение
+
+Приложение используется модель https://huggingface.co/deepset/roberta-base-squad2. Выполняет поиск ответа на вопрос по тексту.
+
+Cloud.py - файл приложения для публикации в облаке streamlit
+CloudApi.py - файл приложения, реализующий интерфейс api
+test_CloudApi.py - файл тестов
+
+Приложение опубликовано в облаке streamlit https://mlproject14-kbzvc5fnzdrhalbamjnro7.streamlit.app/
+Для запуска нужно:
+1. Задать текст
+2. Задать вопрос
+3. Нажать выполнить. В результате будет выведен ответ.
+
+
+
