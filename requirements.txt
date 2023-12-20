@@ -4,4 +4,5 @@ tensorflow
 fastapi
 pytest
 pydantic
+httpx
 wikipedia
