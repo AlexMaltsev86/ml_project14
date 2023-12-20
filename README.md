@@ -12,9 +12,10 @@
 
 Приложение используется модель https://huggingface.co/deepset/roberta-base-squad2. Выполняет поиск ответа на вопрос по тексту.
 
-Cloud.py - файл приложения для публикации в облаке streamlit
-CloudApi.py - файл приложения, реализующий интерфейс api
-test_CloudApi.py - файл тестов
+Структура файлов
+1. Cloud.py - файл приложения для публикации в облаке streamlit
+2. CloudApi.py - файл приложения, реализующий интерфейс api
+3. test_CloudApi.py - файл тестов
 
 Приложение опубликовано в облаке streamlit https://mlproject14-kbzvc5fnzdrhalbamjnro7.streamlit.app/
 Для запуска нужно:
