@@ -2,5 +2,6 @@ transformers
 streamlit
 tensorflow
 fastapi
+pytest
 pydantic
 wikipedia
