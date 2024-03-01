@@ -20,7 +20,6 @@ app = FastAPI()
 # Отправка результата запроса
 @app.post("/answer/")
 def answer(params: ApiParams):
-   
     gen_kwargs = {
         "min_length": 20,
         "max_new_tokens": 100,
