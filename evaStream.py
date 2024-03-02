@@ -24,7 +24,7 @@ def execute(question):
         "repetition_penalty": 1.5,
      }
 
-     result = model(params.question, **gen_kwargs)
+     result = model(question, **gen_kwargs)
 
      st.text("Ответ на вопрос: " + result[0]["generated_text"])
 
