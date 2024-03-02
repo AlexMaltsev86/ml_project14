@@ -20,7 +20,7 @@ def execute(question1, text1):
 # Заголовок
 st.title(body="Приложение отвечающее на пользовательские вопросы по тексту")
 # Текст для анализа
-text = st.text_area(label='Введите текст',value=' ', height=300)
+text = st.text_area(label="Введите текст", value=" ", height=300)
 # Вопрос
 question = st.text_input(label="Введите вопрос", value=" ")
 # Активность кнопки
