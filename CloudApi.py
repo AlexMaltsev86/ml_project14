@@ -30,4 +30,3 @@ def answer(params: ApiParams):
     # Ответ на вопрос
     result = model(params.question, params.search_topic)
     return result
-
