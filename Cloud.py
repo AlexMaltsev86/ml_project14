@@ -3,8 +3,10 @@ import streamlit as st
 # Функция подгрузки данных модели
 @st.cache_resource
 def load_model():
-   model_pipeline = pipeline("question-answering", model="deepset/roberta-base-squad2")
-   return model_pipeline
+    model_pipeline = pipeline(
+        task="question-answering", model="deepset/roberta-base-squad2"
+    )
+    return model_pipeline
 # Функция запуска модели
 def execute(question1 , text1):
    result = model(question=question1, context=text1)
