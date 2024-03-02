@@ -10,7 +10,7 @@ def load_model():
 
 
 # Функция запуска модели
-def execute(question):   
+def execute(question):  
 
     gen_kwargs = {
         "min_length": 20,
@@ -22,7 +22,7 @@ def execute(question):
         "no_repeat_ngram_size": 2,
         # "use_cache": True,
         "repetition_penalty": 1.5,
-     }
+    }
 
     result = model(question, **gen_kwargs)
 
@@ -30,7 +30,7 @@ def execute(question):
 
 
 # Заголовок
-st.title(body='Приложение отвечающее на пользовательские вопросы')
+st.title(body="Приложение отвечающее на пользовательские вопросы")
 
 # Вопрос
 question = st.text_input(label="Введите вопрос", value=" ")
