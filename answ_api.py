@@ -29,7 +29,7 @@ app = FastAPI()
 @app.post("/answer/")
 def answer(params: ApiParams):
     # Поиск статьи в википедии
-    wiki_sum = wikipedia.summary(params.search_topic, sentences=10)
+    # wiki_sum = wikipedia.summary(params.search_topic, sentences=10)
     # Ответ на вопрос
     result = model(params.question, params.search_topic)
     # Язык статьи
