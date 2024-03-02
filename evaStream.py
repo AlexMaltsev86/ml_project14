@@ -10,7 +10,7 @@ def load_model():
 
 
 # Функция запуска модели
-def execute(question):  
+def execute(question):
 
     gen_kwargs = {
         "min_length": 20,
