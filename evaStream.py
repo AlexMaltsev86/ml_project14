@@ -12,7 +12,7 @@ def load_model():
 # Функция запуска модели
 def execute(question):   
 
-   gen_kwargs = {
+    gen_kwargs = {
         "min_length": 20,
         "max_new_tokens": 100,
         "top_k": 50,
@@ -22,9 +22,11 @@ def execute(question):
         "no_repeat_ngram_size": 2,
         # "use_cache": True,
         "repetition_penalty": 1.5,
-    }
-    result = model(question, **gen_kwargs)
-    st.text("Ответ на вопрос: " + result[0]["generated_text"])
+     }
+
+     result = model(params.question, **gen_kwargs)
+
+     st.text("Ответ на вопрос: " + result[0]["generated_text"])
 
 
 # Заголовок
