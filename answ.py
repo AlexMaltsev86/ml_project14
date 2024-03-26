@@ -2,7 +2,7 @@ from transformers import pipeline
 import streamlit as st
 
 
-# Функция подгрузки данных модели
+# Функция подгрузки данных модел
 @st.cache_resource
 def load_model():
     model_pipeline = pipeline(
