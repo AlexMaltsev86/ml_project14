@@ -17,12 +17,18 @@ def execute(question1, text1):
     st.text("Ответ на вопрос: " + result["answer"])
 
 
-# Заголовок
-st.title(body="Приложение отвечающее на пользовательские вопросы по тексту")
-# Текст для анализа
-text = st.text_area(label="Введите текст", value=" ", height=300)
-# Вопрос
-question = st.text_input(label="Введите вопрос", value=" ")
+# Функция инициализации части фронтенда
+def initializing_frontend():
+    # Заголовок
+    st.title(body="Приложение отвечающее на пользовательские вопросы по тексту")
+    # Текст для анализа
+    text = st.text_area(label="Введите текст", value=" ", height=300)
+    # Вопрос
+    question = st.text_input(label="Введите вопрос", value=" ")
+
+
+# Инициализация фронтенда
+initializing_frontend()
 # Активность кнопки
 disabled = True if text == " " or question == " " else False
 # Подгрузка модели
