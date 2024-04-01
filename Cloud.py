@@ -24,10 +24,7 @@ text = st.text_area(label="Введите текст", value=" ", height=300)
 # Вопрос
 question = st.text_input(label="Введите вопрос", value=" ")
 # Активность кнопки
-if text == " " or question == " ":
-    disabled = True
-else:
-    disabled = False
+disabled = True if text == " " or question == " " else False
 # Подгрузка модели
 model = load_model()
 # Кнопка для запуска модели
